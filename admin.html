@@ -2,38 +2,63 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panel Admina</title>
+<title>Admin</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
   <h1>Panel Admina</h1>
-  <button id="backBtn">Wróć</button>
+  <button onclick="location.href='index.html'">Powrót</button>
 </header>
 
-<main>
-  <section>
-    <h2>Dodaj członka</h2>
-    <input type="text" id="addName" placeholder="Imię i nazwisko">
-    <input type="text" id="addRole" placeholder="Rola">
+<section>
+  <h2>➕ Dodaj</h2>
+  <div class="row">
+    <input type="number" id="addId" placeholder="ID">
+    <input type="text" id="addName" placeholder="Imię">
+
+    <select id="addRole">
+      <option>10 | Chief of Family</option>
+      <option>9 | Deputy Chief of Family</option>
+      <option>8 | Asst. Chief of Family</option>
+      <option>7 | Awakend</option>
+      <option>6 | Chosen</option>
+      <option>5 | Seeker</option>
+      <option>4 | Adept</option>
+      <option>3 | Member</option>
+      <option>2 | Cadet</option>
+      <option>1 | Vacation/Suspended</option>
+    </select>
+
     <button id="addBtn">Dodaj</button>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Usuń członka</h2>
-    <input type="number" id="removeId" placeholder="ID członka">
-    <button id="removeBtn">Usuń</button>
-  </section>
+<section>
+  <h2>❌ Usuń</h2>
+  <input type="number" id="removeId">
+  <button id="removeBtn">Usuń</button>
+</section>
 
-  <section>
-    <h2>Edytuj członka</h2>
-    <input type="number" id="editId" placeholder="ID członka">
-    <input type="text" id="editName" placeholder="Nowe imię">
-    <input type="text" id="editRole" placeholder="Nowa rola">
-    <button id="editBtn">Zmień dane</button>
-  </section>
-</main>
+<section>
+  <h2>✏️ Edytuj</h2>
+  <input type="number" id="editId">
+  <input type="text" id="editName">
+  <select id="editRole">
+    <option>10 | Chief of Family</option>
+    <option>9 | Deputy Chief of Family</option>
+    <option>8 | Asst. Chief of Family</option>
+    <option>7 | Awakend</option>
+    <option>6 | Chosen</option>
+    <option>5 | Seeker</option>
+    <option>4 | Adept</option>
+    <option>3 | Member</option>
+    <option>2 | Cadet</option>
+    <option>1 | Vacation/Suspended</option>
+  </select>
+  <button id="editBtn">Zmień</button>
+</section>
 
 <script src="admin.js"></script>
 </body>
