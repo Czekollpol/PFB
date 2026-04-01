@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Admina</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Panel Admina</h1>
+  <button id="backBtn">Wróć</button>
+</header>
+
+<main>
+  <section>
+    <h2>Dodaj członka</h2>
+    <input type="text" id="addName" placeholder="Imię i nazwisko">
+    <input type="text" id="addRole" placeholder="Rola">
+    <button id="addBtn">Dodaj</button>
+  </section>
+
+  <section>
+    <h2>Usuń członka</h2>
+    <input type="number" id="removeId" placeholder="ID członka">
+    <button id="removeBtn">Usuń</button>
+  </section>
+
+  <section>
+    <h2>Edytuj członka</h2>
+    <input type="number" id="editId" placeholder="ID członka">
+    <input type="text" id="editName" placeholder="Nowe imię">
+    <input type="text" id="editRole" placeholder="Nowa rola">
+    <button id="editBtn">Zmień dane</button>
+  </section>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
